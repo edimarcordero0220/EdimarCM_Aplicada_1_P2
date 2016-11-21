@@ -142,7 +142,7 @@ namespace EdimarCM_Aplicada_1_P2
 
         private void Agregarbutton_Click(object sender, EventArgs e)
         {
-            c.cliente.Add(new ClientesD ((int) ClientecomboBox.SelectedValue, ClientecomboBox.Text));
+            //c.cliente.Add(new ClientesD ((int) ClientecomboBox.SelectedValue, ClientecomboBox.Text));
             dataGridView.DataSource = null;
             dataGridView.DataSource = c.Cliente;
            ClientecomboBox.Text = "";

@@ -23,6 +23,14 @@ namespace EdimarCM_Aplicada_1_P2
             Re.MdiParent = this.MdiParent;
             Re.Show();
         }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            Consulta Re = new Consulta();
+            Re.MdiParent = this.MdiParent;
+            Re.Show();
+        }
     }
     }
 
