@@ -20,7 +20,7 @@ namespace DAL
         public virtual DbSet<ClientesTelefonos> ClienteTelefono { get; set; }
         public virtual DbSet<TiposTelefonons> TipoTelefono { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ClientesD>()
                 .HasMany<TiposTelefonons>(c => c.Descripcion)
@@ -30,6 +30,8 @@ namespace DAL
                     Ge.MapLeftKey("");
                     Ge.MapRightKey("");
                     Ge.ToTable("");
-                });
+                });*/
+
+        /*--> aqui quede :'(*/
         }
     }
