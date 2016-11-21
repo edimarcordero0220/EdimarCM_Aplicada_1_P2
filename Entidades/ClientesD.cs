@@ -12,11 +12,11 @@ namespace Entidades
         
 
         [Key]
-        public int Cliente { get; set; }
+        public int ClienteId { get; set; }
         public string Nombre { get; set; }
-        public virtual ICollection<ClientesD> cliente { get; set; }
+        //public virtual ICollection<ClientesD> cliente { get; set; }
         //public DateTime FechaNacimiento { get; set; }
         public string LimiteCredito { get; set; }
-        public ICollection<TiposTelefonons> Descripcion { get; set; }
+        //public ICollection<TiposTelefonons> Descripcion { get; set; }
     }
 }

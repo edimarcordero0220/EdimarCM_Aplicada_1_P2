@@ -23,10 +23,10 @@ namespace EdimarCM_Aplicada_1_P2
         private void Llenar(ClientesD c)
         {
             var clie = ClientesBLL.Buscar(u.StringToInt(IdtextBox.Text));
-            IdtextBox.Text = c.Cliente.ToString();
+            IdtextBox.Text = c.ClienteId.ToString();
             NombretextBox.Text = c.Nombre;
-            //dataGridView.DataSource = null;
-            //GridView.DataSource = c.clienteid;
+            dataGridView.DataSource = null;
+            dataGridView.DataSource = c.ClienteId;
 
         }
         public void LlenarClase(Entidades.ClientesD cliente)
@@ -144,7 +144,7 @@ namespace EdimarCM_Aplicada_1_P2
         {
             //c.cliente.Add(new ClientesD ((int) ClientecomboBox.SelectedValue, ClientecomboBox.Text));
             dataGridView.DataSource = null;
-            dataGridView.DataSource = c.Cliente;
+            dataGridView.DataSource = c.ClienteId;
            ClientecomboBox.Text = "";
         }
     }
